@@ -28,7 +28,7 @@ ax.set_xticks(range(7))
 ax.set_xticklabels(['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'])
 st.pyplot(fig)
 
-st.subheader("Jam paling sering dipinjam dalam sehari")
+st.subheader("Jam dengan peminjaman sepeda paling banyak dalam sehari")
 
 fig, ax = plt.subplots(figsize=(8, 4))
 sns.barplot(x=hourly_bike_rentals.index, y=hourly_bike_rentals.values, palette='viridis', ax=ax, hue=None, legend=False)
